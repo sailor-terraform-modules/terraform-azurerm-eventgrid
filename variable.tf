@@ -14,18 +14,18 @@ variable "resource_group_name" {
 
 }
 variable "input_schema" {
-  description  = "Specifies the schema in which incoming events will be published to this domain. Allowed values are CloudEventSchemaV1_0, CustomEventSchema, or EventGridSchema. Defaults to EventGridSchema. Changing this forces a new resource to be created."
-  type    = string
+  description = "Specifies the schema in which incoming events will be published to this domain. Allowed values are CloudEventSchemaV1_0, CustomEventSchema, or EventGridSchema. Defaults to EventGridSchema. Changing this forces a new resource to be created."
+  type        = string
 }
 variable "public_network_access_enabled" {
   description = "Whether or not public network access is allowed for this event grid."
   type        = bool
-  default = true
+  default     = true
 }
 variable "local_auth_enabled" {
   description = "Whether local auth is enabled or not"
   type        = bool
-  default = true
+  default     = true
 
 }
 variable "identity" {
@@ -37,7 +37,7 @@ variable "identity" {
 variable "type" {
   description = "Specifies the type of Managed Service Identity that should be configured on this Redis Cluster. Possible values are SystemAssigned, UserAssigned, SystemAssigned, UserAssigned"
   type        = string
-  default = "SystemAssigned"
+  default     = "SystemAssigned"
 }
 # variable "input_mapping_fields" {
 #     description = "region of deployment"
@@ -106,7 +106,7 @@ variable "inbound_ip_rule" {
 variable "ip_mask" {
   description = " the Weekday name - possible values include"
   type        = string
-  default = ""
+  default     = ""
 }
 # variable "action" {
 #   description = "The SKU of Redis to use. Possible values are Basic, Standard and Premium."
